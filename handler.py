@@ -39,6 +39,11 @@ def b64_to_image(b64_string):
 
 def handler(job):
     job_input = job.get("input", {})
+
+    # Quick health-check mode — no model download needed
+    if job_input.get("test_mode"):
+        return {"status": "ok", "message": "handler ready"}
+
     prompt          = job_input.get("prompt", "cinematic motion")
     negative_prompt = job_input.get("negative_prompt", "blurry, static")
     resolution      = job_input.get("resolution", "720p")
