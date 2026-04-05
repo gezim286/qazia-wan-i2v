@@ -1,0 +1,11 @@
+{
+  "title": "Qazia Wan I2V",
+  "description": "Image-to-video generation using Wan 2.1 for Albanian/Italian trap music video pipeline",
+  "type": "serverless",
+  "category": "video",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 40,
+    "cuda": "12.1"
+  }
+}
