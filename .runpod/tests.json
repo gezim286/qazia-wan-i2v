@@ -1,0 +1,13 @@
+{
+  "tests": [
+    {
+      "name": "video_generation_test",
+      "input": {
+        "image_b64": "",
+        "prompt": "dark trap night city cinematic",
+        "duration": 5
+      },
+      "timeout": 300
+    }
+  ]
+}
